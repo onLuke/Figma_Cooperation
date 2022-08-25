@@ -1,0 +1,184 @@
+/* 오늘의 쇼핑 제안 */
+
+.offer-main{
+    position:absolute;
+    top:100px;
+    left:calc(50% - var(--offer-section-width)/2);
+    height:var(--offer-section-height);
+    width:var(--offer-section-width);
+    
+}
+
+.logo-image > img{
+    width:176px;
+    height:40px;
+}
+
+.sr-only{
+    position: absolute;
+    width: 1px;
+    height: 1px;
+    overflow: hidden;
+    clip: rect(0,0,0,0);
+    clip-path: polygon(0 0, 0 0, 0 0);
+    white-space: nowrap;
+}
+
+.offer-title{
+    height:30px;
+    font-family: 'Noto Sans KR', sans-serif;
+    font-size: var(--sub-title-font-size);
+    font-weight: 500;
+    line-height:115%;
+    padding-left: 30px;
+    background-image: url('../../assets/icon/shopping.svg');
+    background-repeat: no-repeat;
+    background-position: 0% 0%;
+    background-size: 30px 30px;
+    background-origin: padding-box;
+    margin: 48px 0 24px 0;
+}
+
+.offer-products{
+    display:flex;
+    justify-content: space-between;
+}
+
+.product-offer{
+    position:relative;
+    width: 200px;
+    height: 270px;
+    display: flex;
+    justify-content: center;
+}
+
+.product-offer > img{
+    position:absolute;
+    top:14px;
+    left:20px;
+    z-index: 0;
+}
+
+.discount-badge{
+    width:53px;
+    height:30px;
+    position:absolute;
+    line-height: 24px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-weight: var(--discount-font-weight);
+    font-size:var(--discount-font-size);
+    color:#FFFFFF;
+    background-color: #E52330;
+    z-index: 1000;
+}
+
+.offer-description{
+    position:absolute;
+    top:186px;
+    left:14px;
+    font-size:var(--description-font-size);
+    font-weight: var(--description-font-weight);
+    line-height: var(--description-line-height);
+    font-family: 'Noto Sans KR', sans-serif;
+    word-break:keep-all;
+    white-space: nowrap;
+    overflow: hidden;
+    text-overflow: ellipsis;
+    width:172px;
+    height:17px;
+    margin:0;
+    vertical-align: top;
+    text-align: left;
+}
+
+.rocket-delivery, .free-delivery{
+    position:absolute;
+    top:215px;
+    left:14px;
+}
+
+.free-delivery{
+    font-family: 'Noto Sans KR', sans-serif;
+    font-size:var(--free-delivery-font-size);
+    line-height: var(--free-delivery-line-height);
+    color:var(--free-delivery-color);
+    margin-bottom: 4px;
+
+}
+.rating-star-no-option, .rating-star-option{
+    width:117px;
+    height:17px;
+}
+
+.rating{
+    float:left;
+    padding:2px 0;
+    width: 70px;
+    height:15px;
+    cursor:pointer;
+
+}
+
+.rating45{
+    background-image: url('../../assets/sprites/rating-stars.png');
+    background-repeat: no-repeat;
+    text-indent:-999em;
+    background-position: 0 -124.64px;
+}
+
+.rating5{
+    background-image: url('../../assets/sprites/rating-stars.png');
+    background-repeat: no-repeat;
+    text-indent:-999em;
+    background-position: 0 -139px;
+}
+
+.rating4{
+    background-image: url('../../assets/sprites/rating-stars.png');
+    background-repeat: no-repeat;
+    text-indent:-999em;
+    background-position: 0 -110px;
+}
+
+.rating-star-no-option{
+    position:absolute;
+    top:215px;
+    left:14px;
+}
+
+.rating-star-option{
+    position: absolute;
+    top:236px;
+    left:14px;
+}
+
+.score{
+    position:absolute;
+    bottom: 0;
+    left:72px;
+    font-size:var(--score-font-size);
+    font-weight: var(--score-font-weight);
+    line-height: var(--score-line-height);
+    font-family: 'Noto Sans KR', sans-serif;
+    color:var(--score-color);
+}
+
+.rating-star-option{
+    width: 117px;
+    height:14px;
+    position:absolute;
+    top:235px;
+    left:14px;
+    cursor:pointer;
+    background-repeat: no-repeat;
+    background-position: 0 -124px;
+    overflow: hidden;
+}
+
+
+
+.product-offer>a{
+    display: block;
+}
