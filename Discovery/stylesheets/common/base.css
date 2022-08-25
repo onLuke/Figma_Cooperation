@@ -1,0 +1,57 @@
+/* Base 스타일 작성 */
+@import url('https://fonts.googleapis.com/css2?family=Noto+Sans+KR:wght@100;300;500;700;900&display=swap');
+
+body{
+  font: 1.6rem/1.15 var(--font-family);
+}
+
+a{
+  color:inherit;
+  text-decoration: none;
+}
+
+
+html,
+body,
+div,
+a,
+h6
+em,
+img,
+strong,
+figure,
+figcaption,
+footer,
+header,
+menu,
+nav,
+section,
+h1, h2, h3, h4, h5, h6 {
+  margin: 0;
+  padding: 0;
+  border: 0;
+  vertical-align: baseline;
+}
+
+*,
+*::before,
+*::after {
+  box-sizing: border-box;
+}
+
+button{
+  color:inherit;
+  font:inherit;
+  margin:0;
+  overflow: visible;
+  cursor: pointer;
+  border: 0;
+}
+
+a img{
+  vertical-align: middle;
+}
+
+button:disabled{
+  cursor: not-allowed;
+}
